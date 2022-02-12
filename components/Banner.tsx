@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 
 const Banner: NextPage = () => {
 	return (
-		<div className="grid place-items-center h-80">
+		<section className="grid place-items-center min-h-[24rem]">
 			<div className="text-center">
 				<h1 className="text-gray-50 text-5xl font-bold sm:text-7xl">
 					I&apos;m Kasidis
@@ -11,7 +11,7 @@ const Banner: NextPage = () => {
 					Frontend Web Developer
 				</h3>
 			</div>
-		</div>
+		</section>
 	);
 };
 
