@@ -4,10 +4,12 @@ import Navigation from '../components/Navigation';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<>
+		<div className="sm:flex">
 			<Navigation />
-			<Component {...pageProps} />
-		</>
+			<div className="sm:flex-1">
+				<Component {...pageProps} />
+			</div>
+		</div>
 	);
 }
 
