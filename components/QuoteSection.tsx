@@ -6,8 +6,8 @@ interface Props {
 
 const QuoteSection: NextPage<Props> = ({ text }) => {
 	return (
-		<section className="grid place-items-center bg-gray-800 min-h-[15rem] py-4 text-gray-50">
-			<div className="w-4/5">{text}</div>
+		<section className="grid place-items-center bg-gray-800 min-h-[15rem] py-10 text-gray-50 ">
+			<h3 className="w-4/5 max-w-3xl text-lg font-bold">{text}</h3>
 		</section>
 	);
 };
