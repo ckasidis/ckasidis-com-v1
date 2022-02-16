@@ -11,7 +11,7 @@ const HomePage: NextPage = () => {
 			<Banner />
 			<QuoteSection
 				icon={CgWebsite}
-				title="Web Developer"
+				title="Web Development"
 				description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laborum qui dolorum quibusdam cumque obcaecati iste odit inventore fuga incidunt alias voluptatem rerum numquam ipsa molestiae dignissimos, necessitatibus repudiandae expedita"
 			/>
 			<SkillSection
