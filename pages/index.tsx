@@ -1,14 +1,13 @@
 import { NextPage } from 'next';
 import {
-	SiAdobecreativecloud,
 	SiAdobeillustrator,
 	SiAdobephotoshop,
 	SiAdobepremierepro,
 	SiAmazonaws,
-	SiBootstrap,
 	SiCloudflare,
 	SiContentful,
 	SiCss3,
+	SiDart,
 	SiDocker,
 	SiFacebook,
 	SiFigma,
@@ -23,19 +22,14 @@ import {
 	SiGoogletagmanager,
 	SiHtml5,
 	SiHubspot,
-	SiInstagram,
 	SiJava,
 	SiJavascript,
-	SiLinux,
 	SiMariadb,
 	SiMessenger,
 	SiMicrosoftazure,
 	SiMicrosoftexcel,
-	SiMicrosoftoffice,
 	SiMicrosoftteams,
-	SiNamecheap,
 	SiNextdotjs,
-	SiNodedotjs,
 	SiNpm,
 	SiPhp,
 	SiPlesk,
@@ -58,8 +52,8 @@ const HomePage: NextPage = () => {
 			<Banner />
 			<QuoteSection
 				icon={CgWebsite}
-				title="Web Development"
-				description="Frontend Web Developer with Experience in React.js, Next.js, and TypeScript"
+				title="Frontend Developer"
+				description="Developer with Experience in React.js, Next.js, TypeScript, and Flutter"
 			/>
 			<SkillSection
 				skillColumns={[
@@ -75,15 +69,11 @@ const HomePage: NextPage = () => {
 								icon: SiTypescript,
 							},
 							{
-								name: 'Node.js',
-								icon: SiNodedotjs,
-							},
-							{
 								name: 'CSS3',
 								icon: SiCss3,
 							},
 							{
-								name: 'SASS',
+								name: 'Sass',
 								icon: SiSass,
 							},
 							{
@@ -97,6 +87,10 @@ const HomePage: NextPage = () => {
 							{
 								name: 'Java',
 								icon: SiJava,
+							},
+							{
+								name: 'Dart',
+								icon: SiDart,
 							},
 						],
 					},
@@ -116,10 +110,6 @@ const HomePage: NextPage = () => {
 								icon: SiTailwindcss,
 							},
 							{
-								name: 'BootStrap',
-								icon: SiBootstrap,
-							},
-							{
 								name: 'Framer Motion',
 								icon: SiFramer,
 							},
@@ -135,10 +125,14 @@ const HomePage: NextPage = () => {
 								name: 'Contentful',
 								icon: SiContentful,
 							},
+							{
+								name: 'Flutter',
+								icon: SiFlutter,
+							},
 						],
 					},
 					{
-						title: 'DevOps and Cloud',
+						title: 'DevOps',
 						skills: [
 							{
 								name: 'AWS',
@@ -178,8 +172,8 @@ const HomePage: NextPage = () => {
 			/>
 			<QuoteSection
 				icon={CgToolbox}
-				title="Small Business Founder"
-				description="Founder/Developer/Marketer of an Online Course Business built with WordPress and LearnDash"
+				title="Business Founder"
+				description="Founder/Developer/Marketer of an Online Course Business built with WordPress"
 			/>
 			<SkillSection
 				skillColumns={[
