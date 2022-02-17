@@ -45,6 +45,7 @@ import { CgToolbox, CgWebsite } from 'react-icons/cg';
 import Banner from '../components/Banner';
 import QuoteSection from '../components/QuoteSection';
 import SkillSection from '../components/SkillSection';
+import CallToAction from '../components/CallToAction';
 
 const HomePage: NextPage = () => {
 	return (
@@ -170,10 +171,16 @@ const HomePage: NextPage = () => {
 					},
 				]}
 			/>
+			<CallToAction
+				title="My Projects"
+				description="View Source code of this Website and my other Projects on GitHub"
+				button="GitHub Profile"
+				url="https://github.com/ckasidis/"
+			/>
 			<QuoteSection
 				icon={CgToolbox}
 				title="Business Founder"
-				description="Founder/Developer/Marketer of an Online Course Business built with WordPress"
+				description="Founder/Developer/Marketer of an LMS Website Built with WordPress"
 			/>
 			<SkillSection
 				skillColumns={[
@@ -265,6 +272,12 @@ const HomePage: NextPage = () => {
 						],
 					},
 				]}
+			/>
+			<CallToAction
+				title="My LMS Website"
+				description="idkclass.io is 1-year-old and has 100 monthly active users!"
+				button="Visit idkclass.io"
+				url="https://idkclass.io/"
 			/>
 		</>
 	);
