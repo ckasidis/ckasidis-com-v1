@@ -1,5 +1,31 @@
 import { NextPage } from 'next';
-import { SiHtml5 } from 'react-icons/si';
+import {
+	SiAmazonaws,
+	SiBootstrap,
+	SiContentful,
+	SiCss3,
+	SiDocker,
+	SiFirebase,
+	SiFlutter,
+	SiFramer,
+	SiGit,
+	SiGithub,
+	SiGooglecloud,
+	SiHtml5,
+	SiJava,
+	SiJavascript,
+	SiMicrosoftazure,
+	SiNextdotjs,
+	SiNodedotjs,
+	SiNpm,
+	SiPython,
+	SiReact,
+	SiSass,
+	SiTailwindcss,
+	SiTypescript,
+	SiVercel,
+	SiWordpress,
+} from 'react-icons/si';
 import { CgWebsite } from 'react-icons/cg';
 import Banner from '../components/Banner';
 import QuoteSection from '../components/QuoteSection';
@@ -12,82 +38,118 @@ const HomePage: NextPage = () => {
 			<QuoteSection
 				icon={CgWebsite}
 				title="Web Development"
-				description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laborum qui dolorum quibusdam cumque obcaecati iste odit inventore fuga incidunt alias voluptatem rerum numquam ipsa molestiae dignissimos, necessitatibus repudiandae expedita"
+				description="Frontend Web Developer with Experience in React.js, Next.js, and TypeScript"
 			/>
 			<SkillSection
 				skillColumns={[
 					{
-						title: 'col1',
+						title: 'Languages',
 						skills: [
 							{
-								name: 'HTML',
+								name: 'JavaScript',
+								icon: SiJavascript,
+							},
+							{
+								name: 'TypeScript',
+								icon: SiTypescript,
+							},
+							{
+								name: 'Node.js',
+								icon: SiNodedotjs,
+							},
+							{
+								name: 'CSS3',
+								icon: SiCss3,
+							},
+							{
+								name: 'SASS',
+								icon: SiSass,
+							},
+							{
+								name: 'HTML5',
 								icon: SiHtml5,
 							},
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'Python',
+								icon: SiPython,
 							},
 							{
-								name: 'HTML',
-								icon: SiHtml5,
-							},
-							{
-								name: 'HTML',
-								icon: SiHtml5,
-							},
-							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'Java',
+								icon: SiJava,
 							},
 						],
 					},
 					{
-						title: 'col2',
+						title: 'Tools and Libraries',
 						skills: [
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'React.js',
+								icon: SiReact,
 							},
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'Next.js',
+								icon: SiNextdotjs,
 							},
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'TailwindCSS',
+								icon: SiTailwindcss,
 							},
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'BootStrap',
+								icon: SiBootstrap,
 							},
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'Framer Motion',
+								icon: SiFramer,
+							},
+							{
+								name: 'NPM',
+								icon: SiNpm,
+							},
+							{
+								name: 'WordPress',
+								icon: SiWordpress,
+							},
+							{
+								name: 'Contentful',
+								icon: SiContentful,
 							},
 						],
 					},
 					{
-						title: 'col3',
+						title: 'DevOps and Cloud',
 						skills: [
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'AWS',
+								icon: SiAmazonaws,
 							},
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'Azure',
+								icon: SiMicrosoftazure,
 							},
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'GCP',
+								icon: SiGooglecloud,
 							},
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'Docker',
+								icon: SiDocker,
 							},
 							{
-								name: 'HTML',
-								icon: SiHtml5,
+								name: 'Git',
+								icon: SiGit,
+							},
+							{
+								name: 'GitHub',
+								icon: SiGithub,
+							},
+							{
+								name: 'Vercel',
+								icon: SiVercel,
+							},
+							{
+								name: 'Firebase',
+								icon: SiFirebase,
 							},
 						],
 					},
