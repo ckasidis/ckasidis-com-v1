@@ -25,7 +25,7 @@ interface Props {
 
 const SkillSection: NextPage<Props> = ({ skillColumns }) => {
 	return (
-		<section className="grid place-items-center bg-gray-800 pb-20">
+		<section className="grid place-items-center bg-gray-800 pb-28">
 			<div className="grid gap-8 justify-center w-3/4 max-w-5xl min-h-[24rem] bg-gray-50 p-10 text-center rounded-3xl xl:grid-cols-3">
 				{skillColumns.map((skillColumn, index) => (
 					<div className="grid gap-4" key={index}>

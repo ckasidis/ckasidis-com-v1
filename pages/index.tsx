@@ -7,8 +7,11 @@ import {
 	SiCloudflare,
 	SiContentful,
 	SiCss3,
+	SiD3Dotjs,
 	SiDart,
 	SiDocker,
+	SiDotnet,
+	SiExpress,
 	SiFacebook,
 	SiFigma,
 	SiFirebase,
@@ -16,32 +19,49 @@ import {
 	SiFramer,
 	SiGit,
 	SiGithub,
+	SiGithubactions,
 	SiGoogleanalytics,
 	SiGooglecloud,
 	SiGooglesearchconsole,
 	SiGoogletagmanager,
+	SiGraphql,
 	SiHtml5,
 	SiHubspot,
 	SiJava,
 	SiJavascript,
+	SiJest,
 	SiMariadb,
 	SiMessenger,
 	SiMicrosoftazure,
 	SiMicrosoftexcel,
 	SiMicrosoftteams,
+	SiMongodb,
 	SiNextdotjs,
 	SiNpm,
+	SiPandas,
 	SiPhp,
 	SiPlesk,
+	SiPostgresql,
 	SiPython,
+	SiPytorch,
 	SiReact,
+	SiRust,
 	SiSass,
+	SiSocketdotio,
+	SiSolidity,
+	SiStripe,
+	SiSvelte,
 	SiTailwindcss,
+	SiTensorflow,
+	SiThreedotjs,
 	SiTypescript,
+	SiUnity,
 	SiVercel,
+	SiWeb3Dotjs,
+	SiWebassembly,
 	SiWordpress,
 } from 'react-icons/si';
-import { CgToolbox, CgWebsite } from 'react-icons/cg';
+import { CgSmileMouthOpen, CgToolbox, CgWebsite } from 'react-icons/cg';
 import Banner from '../components/Banner';
 import QuoteSection from '../components/QuoteSection';
 import SkillSection from '../components/SkillSection';
@@ -275,9 +295,112 @@ const HomePage: NextPage = () => {
 			/>
 			<CallToAction
 				title="My LMS Website"
-				description="idkclass.io is 1-year-old and has 100 monthly active users!"
+				description="idkclass.io is 1-year-old and has over 100 Monthly Active Users!"
 				button="Visit idkclass.io"
 				url="https://idkclass.io/"
+			/>
+			<QuoteSection
+				icon={CgSmileMouthOpen}
+				title="A Learner"
+				description="The 2 Best Skills I possess are 'Eagerness to Learn' and 'Adaptability'"
+			/>
+			<SkillSection
+				skillColumns={[
+					{
+						title: 'Learning',
+						skills: [
+							{
+								name: 'Svelte',
+								icon: SiSvelte,
+							},
+							{
+								name: 'MongoDB',
+								icon: SiMongodb,
+							},
+							{
+								name: 'Express.js',
+								icon: SiExpress,
+							},
+							{
+								name: 'GraphQL',
+								icon: SiGraphql,
+							},
+
+							{
+								name: 'Testing',
+								icon: SiJest,
+							},
+							{
+								name: 'CI/CD',
+								icon: SiGithubactions,
+							},
+						],
+					},
+					{
+						title: 'Planning to Learn',
+						skills: [
+							{
+								name: 'Stripe.js',
+								icon: SiStripe,
+							},
+							{
+								name: 'D3.js',
+								icon: SiD3Dotjs,
+							},
+							{
+								name: 'socket.io',
+								icon: SiSocketdotio,
+							},
+							{
+								name: 'Three.js',
+								icon: SiThreedotjs,
+							},
+							{
+								name: '.NET6',
+								icon: SiDotnet,
+							},
+							{
+								name: 'Unity',
+								icon: SiUnity,
+							},
+						],
+					},
+					{
+						title: 'Other Interests',
+						skills: [
+							{
+								name: 'Web3',
+								icon: SiWeb3Dotjs,
+							},
+							{
+								name: 'Smart Contracts',
+								icon: SiSolidity,
+							},
+							{
+								name: 'WASM',
+								icon: SiWebassembly,
+							},
+							{
+								name: 'Rust',
+								icon: SiRust,
+							},
+							{
+								name: 'Data Science',
+								icon: SiPandas,
+							},
+							{
+								name: 'Machine Learning',
+								icon: SiTensorflow,
+							},
+						],
+					},
+				]}
+			/>
+			<CallToAction
+				title="Contact Me"
+				description="Contact me by email: me@ckasidis.com"
+				button="Send Email"
+				url="mailto:me@ckasidis.com"
 			/>
 		</>
 	);
