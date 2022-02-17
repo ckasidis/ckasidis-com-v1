@@ -1,23 +1,44 @@
 import { NextPage } from 'next';
 import {
+	SiAdobecreativecloud,
+	SiAdobeillustrator,
+	SiAdobephotoshop,
+	SiAdobepremierepro,
 	SiAmazonaws,
 	SiBootstrap,
+	SiCloudflare,
 	SiContentful,
 	SiCss3,
 	SiDocker,
+	SiFacebook,
+	SiFigma,
 	SiFirebase,
 	SiFlutter,
 	SiFramer,
 	SiGit,
 	SiGithub,
+	SiGoogleanalytics,
 	SiGooglecloud,
+	SiGooglesearchconsole,
+	SiGoogletagmanager,
 	SiHtml5,
+	SiHubspot,
+	SiInstagram,
 	SiJava,
 	SiJavascript,
+	SiLinux,
+	SiMariadb,
+	SiMessenger,
 	SiMicrosoftazure,
+	SiMicrosoftexcel,
+	SiMicrosoftoffice,
+	SiMicrosoftteams,
+	SiNamecheap,
 	SiNextdotjs,
 	SiNodedotjs,
 	SiNpm,
+	SiPhp,
+	SiPlesk,
 	SiPython,
 	SiReact,
 	SiSass,
@@ -26,7 +47,7 @@ import {
 	SiVercel,
 	SiWordpress,
 } from 'react-icons/si';
-import { CgWebsite } from 'react-icons/cg';
+import { CgToolbox, CgWebsite } from 'react-icons/cg';
 import Banner from '../components/Banner';
 import QuoteSection from '../components/QuoteSection';
 import SkillSection from '../components/SkillSection';
@@ -150,6 +171,102 @@ const HomePage: NextPage = () => {
 							{
 								name: 'Firebase',
 								icon: SiFirebase,
+							},
+						],
+					},
+				]}
+			/>
+			<QuoteSection
+				icon={CgToolbox}
+				title="Small Business Founder"
+				description="Founder/Developer/Marketer of an Online Course Business built with WordPress and LearnDash"
+			/>
+			<SkillSection
+				skillColumns={[
+					{
+						title: 'Development',
+						skills: [
+							{
+								name: 'WordPress',
+								icon: SiWordpress,
+							},
+							{
+								name: 'MariaDB',
+								icon: SiMariadb,
+							},
+							{
+								name: 'PHP',
+								icon: SiPhp,
+							},
+							{
+								name: 'Plesk',
+								icon: SiPlesk,
+							},
+							{
+								name: 'Azure',
+								icon: SiMicrosoftazure,
+							},
+							{
+								name: 'Cloudflare',
+								icon: SiCloudflare,
+							},
+						],
+					},
+					{
+						title: 'Marketing Tools',
+						skills: [
+							{
+								name: 'Google Analytics',
+								icon: SiGoogleanalytics,
+							},
+							{
+								name: 'Tag Manager',
+								icon: SiGoogletagmanager,
+							},
+							{
+								name: 'Search Console',
+								icon: SiGooglesearchconsole,
+							},
+							{
+								name: 'Hubspot',
+								icon: SiHubspot,
+							},
+							{
+								name: 'Messenger Plugin',
+								icon: SiMessenger,
+							},
+							{
+								name: 'Business Manager',
+								icon: SiFacebook,
+							},
+						],
+					},
+					{
+						title: 'Collaboration',
+						skills: [
+							{
+								name: 'Microsoft Teams',
+								icon: SiMicrosoftteams,
+							},
+							{
+								name: 'Microsoft Excel',
+								icon: SiMicrosoftexcel,
+							},
+							{
+								name: 'Figma',
+								icon: SiFigma,
+							},
+							{
+								name: 'Photoshop',
+								icon: SiAdobephotoshop,
+							},
+							{
+								name: 'Illustrator',
+								icon: SiAdobeillustrator,
+							},
+							{
+								name: 'Premiere Pro',
+								icon: SiAdobepremierepro,
 							},
 						],
 					},
