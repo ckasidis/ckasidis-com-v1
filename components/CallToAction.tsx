@@ -9,14 +9,6 @@ interface Props {
 }
 
 const CallToAction: NextPage<Props> = ({ title, description, button, url }) => {
-	// const svgVariants = {
-	// 	hidden: {
-	// 		opacity: 0,
-	// 	},
-	// 	visible: {
-	// 		opacity: 1,
-	// 	},
-	// };
 	return (
 		<section className="grid gap-y-4 place-items-center min-h-[15rem] py-20">
 			<h2 className="text-3xl font-bold sm:text-5xl text-gray-50 ">{title}</h2>
