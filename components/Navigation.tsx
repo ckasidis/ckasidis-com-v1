@@ -6,7 +6,7 @@ import NavItem from './NavItem';
 
 const Navigation: NextPage = () => {
 	return (
-		<div className="sticky top-0 left-0 bg-gray-800 shadow-2xl text-gray-50 lg:h-screen lg:w-[16rem]">
+		<div className="sticky top-0 left-0 bg-gray-900 shadow-black shadow-lg text-gray-50 lg:h-screen lg:w-[16rem]">
 			<div className="py-10 lg:flex lg:flex-col lg:items-center lg:justify-center lg:h-full lg:gap-10">
 				<motion.a
 					className="hidden lg:block text-4xl hover:text-gray-400"
