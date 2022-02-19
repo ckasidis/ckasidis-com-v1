@@ -199,10 +199,10 @@ const HomePage: NextPage = () => {
 					url="https://github.com/ckasidis/"
 				/>
 			</div>
-			<div id="founder">
+			<div id="my-business">
 				<QuoteSection
 					icon={CgToolbox}
-					title="Founder"
+					title="My Business"
 					description="Founder/Developer/Marketer of an LMS Website Built with WordPress"
 				/>
 				<SkillSection
@@ -303,10 +303,10 @@ const HomePage: NextPage = () => {
 					url="https://idkclass.io/"
 				/>
 			</div>
-			<div id="learner">
+			<div id="roadmap">
 				<QuoteSection
 					icon={CgSmileMouthOpen}
-					title="Learner"
+					title="Roadmap"
 					description="The 2 Best Skills I possess are 'Eagerness to Learn' and 'Adaptability'"
 				/>
 				<SkillSection

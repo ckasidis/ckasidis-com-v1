@@ -20,8 +20,8 @@ const Navigation: NextPage = () => {
 				<nav className="flex items-center justify-evenly">
 					<ul className="flex-1 flex items-center justify-evenly font-bold lg:flex-col lg:gap-6">
 						<NavItem icon={CgWebsite} text="Developer" path="/#developer" />
-						<NavItem icon={CgToolbox} text="Founder" path="/#founder" />
-						<NavItem icon={CgSmileMouthOpen} text="Learner" path="/#learner" />
+						<NavItem icon={CgToolbox} text="My Business" path="/#my-business" />
+						<NavItem icon={CgSmileMouthOpen} text="Roadmap" path="/#roadmap" />
 						<NavItem icon={CgMail} text="Contact" path="/#contact" />
 					</ul>
 				</nav>
