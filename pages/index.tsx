@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import { CgSmileMouthOpen, CgToolbox, CgWebsite } from 'react-icons/cg';
 import {
 	SiAdobeillustrator,
 	SiAdobephotoshop,
@@ -59,7 +60,6 @@ import {
 	SiWebassembly,
 	SiWordpress,
 } from 'react-icons/si';
-import { CgSmileMouthOpen, CgToolbox, CgWebsite } from 'react-icons/cg';
 import Banner from '../components/Banner';
 import QuoteSection from '../components/QuoteSection';
 import SkillSection from '../components/SkillSection';

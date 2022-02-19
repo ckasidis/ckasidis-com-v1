@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
 import { NextPage } from 'next';
+import { motion } from 'framer-motion';
 import { CgMail, CgSmileMouthOpen, CgToolbox, CgWebsite } from 'react-icons/cg';
 import { FaGithub } from 'react-icons/fa';
 import NavItem from './NavItem';
