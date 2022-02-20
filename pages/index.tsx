@@ -64,6 +64,7 @@ import Banner from '../components/Banner';
 import QuoteSection from '../components/QuoteSection';
 import SkillSection from '../components/SkillSection';
 import CallToAction from '../components/CallToAction';
+import ContactForm from '../components/ContactForm';
 
 const HomePage: NextPage = () => {
 	return (
@@ -307,7 +308,7 @@ const HomePage: NextPage = () => {
 				<QuoteSection
 					icon={CgSmileMouthOpen}
 					title="Roadmap"
-					description="The 2 Best Skills I possess are 'Eagerness to Learn' and 'Adaptability'"
+					description="The Best Skill I possess is 'Eagerness to Learn'"
 				/>
 				<SkillSection
 					skillColumns={[
@@ -402,12 +403,9 @@ const HomePage: NextPage = () => {
 				/>
 			</div>
 			<div id="contact">
-				<CallToAction
-					title="Contact"
-					description="Contact me at: info@ckasidis.com"
-					button="Send Email"
-					url="mailto:info@ckasidis.com"
-				/>
+				<CallToAction title="Contact" description="Send me a message">
+					<ContactForm />
+				</CallToAction>
 			</div>
 		</>
 	);
