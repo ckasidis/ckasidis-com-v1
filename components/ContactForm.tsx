@@ -29,8 +29,6 @@ const ContactForm: NextPage = () => {
 		if (message.length <= 0) {
 			isValid = false;
 		}
-
-		// console.log('errors', errors);
 		return isValid;
 	};
 	const handleSubmit = async (e: SyntheticEvent) => {

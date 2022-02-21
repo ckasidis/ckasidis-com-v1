@@ -44,9 +44,9 @@ const sendEmail = async (req, res) => {
 
 	try {
 		const data = await sesClient.send(new SendEmailCommand(params));
-		console.log('Success', data);
+		// console.log('Success', data);
 	} catch (err) {
-		console.log('Error', err);
+		// console.log('Error', err);
 		return res.status(err.statusCode || 500).json({ error: err.message });
 	}
 
