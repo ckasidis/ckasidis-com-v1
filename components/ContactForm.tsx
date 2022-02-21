@@ -8,25 +8,76 @@ const ContactForm: NextPage = () => {
 	const [subject, setSubject] = useState('');
 	const [message, setMessage] = useState('');
 
+	const [showInvalid, setShowInvalid] = useState(false);
+	const [showSuccess, setShowSuccess] = useState(false);
+	const [showFail, setShowFail] = useState(false);
+
+	const [buttonText, setButtonText] = useState('Send');
+
+	const handleValidation = () => {
+		let isValid = true;
+
+		if (fullname.length <= 0) {
+			isValid = false;
+		}
+		if (email.length <= 0) {
+			isValid = false;
+		}
+		if (subject.length <= 0) {
+			isValid = false;
+		}
+		if (message.length <= 0) {
+			isValid = false;
+		}
+
+		// console.log('errors', errors);
+		return isValid;
+	};
 	const handleSubmit = async (e: SyntheticEvent) => {
 		e.preventDefault();
-		const res = await fetch('/api/ses', {
-			body: JSON.stringify({
-				email: 'ckasidis@icloud.com',
-				fullname: 'Kasidis Chantharojwong',
-				subject: 'Hello',
-				message: 'Just a test mail',
-			}),
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			method: 'POST',
-		});
 
-		const { error } = await res.json();
-		if (error) {
-			console.log(error);
-			return;
+		let isValidForm = handleValidation();
+
+		if (!isValidForm) {
+			setShowInvalid(true);
+			setShowSuccess(false);
+			setShowFail(false);
+		} else {
+			setShowInvalid(false);
+			setShowSuccess(false);
+			setShowFail(false);
+			setButtonText('Sending...');
+			const res = await fetch('/api/ses', {
+				body: JSON.stringify({
+					email: email,
+					fullname: fullname,
+					subject: subject,
+					message: message,
+				}),
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				method: 'POST',
+			});
+			const { error } = await res.json();
+			if (error) {
+				// console.log(error);
+				setShowInvalid(false);
+				setShowSuccess(false);
+				setShowFail(true);
+				setButtonText('Send');
+				return;
+			}
+
+			setShowInvalid(false);
+			setShowSuccess(true);
+			setShowFail(false);
+			setButtonText('Send');
+
+			setFullname('');
+			setEmail('');
+			setSubject('');
+			setMessage('');
 		}
 	};
 
@@ -82,12 +133,27 @@ const ContactForm: NextPage = () => {
 					setMessage(e.target.value);
 				}}
 			></textarea>
+			{showInvalid && (
+				<p className="pt-5 text-red-500 text-lg font-bold">
+					Please fill all fields before sending
+				</p>
+			)}
+			{showSuccess && (
+				<p className="pt-5 text-green-500 text-lg font-bold">
+					Message Sent Successfully!
+				</p>
+			)}
+			{showFail && (
+				<p className="pt-5 text-red-500 text-lg font-bold">
+					Sending Failed, please contact info@ckasidis.com
+				</p>
+			)}
 			<motion.button
 				type="submit"
 				className="bg-gray-50 hover:bg-gray-600 w-40 px-10 py-3 mt-10 rounded-full hover:text-gray-50 text-lg text-center font-bold"
 				whileHover={{ scale: 1.1 }}
 			>
-				Send
+				{buttonText}
 			</motion.button>
 		</form>
 	);
