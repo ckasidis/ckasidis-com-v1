@@ -196,7 +196,7 @@ const HomePage: NextPage = () => {
 				/>
 				<CallToAction
 					title="My Projects"
-					description="View Source code of this Website and my other Projects on GitHub"
+					description="View source code of this Website and my other Projects on GitHub"
 					button="My GitHub Profile"
 					url="https://github.com/ckasidis/"
 				/>
@@ -309,7 +309,7 @@ const HomePage: NextPage = () => {
 				<QuoteSection
 					icon={FaMap}
 					title="Roadmap"
-					description="The Best Skill I possess is 'Eagerness to Learn'"
+					description="The best skill I possess is 'Eagerness to Learn'"
 				/>
 				<SkillSection
 					skillColumns={[
