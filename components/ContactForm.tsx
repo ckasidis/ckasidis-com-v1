@@ -3,12 +3,30 @@ import { NextPage } from 'next';
 import { SyntheticEvent } from 'react';
 
 const ContactForm: NextPage = () => {
-	const handleSubmit = (e: SyntheticEvent): void => {
+	const handleSubmit = async (e: SyntheticEvent) => {
 		e.preventDefault();
+		const res = await fetch('/api/ses', {
+			body: JSON.stringify({
+				email: 'ckasidis@icloud.com',
+				fullname: 'Kasidis Chantharojwong',
+				subject: 'Hello',
+				message: 'Just a test mail',
+			}),
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			method: 'POST',
+		});
+
+		const { error } = await res.json();
+		if (error) {
+			console.log(error);
+			return;
+		}
 	};
 
 	return (
-		<form className="grid w-3/4 max-w-3xl">
+		<form className="grid w-3/4 max-w-3xl" onSubmit={handleSubmit}>
 			<label htmlFor="fullname" className="text-gray-500 mt-5 mb-2">
 				Full name<span className="text-red-500">*</span>
 			</label>
@@ -44,7 +62,7 @@ const ContactForm: NextPage = () => {
 				name="message"
 			></textarea>
 			<motion.button
-				onSubmit={handleSubmit}
+				type="submit"
 				className="bg-gray-50 hover:bg-gray-600 w-40 px-10 py-3 mt-10 rounded-full hover:text-gray-50 text-lg text-center font-bold"
 				whileHover={{ scale: 1.1 }}
 			>
