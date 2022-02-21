@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import { motion } from 'framer-motion';
-import { CgMail, CgSmileMouthOpen, CgToolbox, CgWebsite } from 'react-icons/cg';
-import { FaGithub } from 'react-icons/fa';
+import { CgMail, CgToolbox, CgWebsite } from 'react-icons/cg';
+import { FaGithub, FaMap } from 'react-icons/fa';
 import NavItem from './NavItem';
 
 const Navigation: NextPage = () => {
@@ -21,7 +21,7 @@ const Navigation: NextPage = () => {
 					<ul className="flex-1 flex items-center justify-evenly font-bold lg:flex-col lg:gap-6">
 						<NavItem icon={CgWebsite} text="Developer" path="/#developer" />
 						<NavItem icon={CgToolbox} text="My Business" path="/#my-business" />
-						<NavItem icon={CgSmileMouthOpen} text="Roadmap" path="/#roadmap" />
+						<NavItem icon={FaMap} text="Roadmap" path="/#roadmap" />
 						<NavItem icon={CgMail} text="Contact" path="/#contact" />
 					</ul>
 				</nav>

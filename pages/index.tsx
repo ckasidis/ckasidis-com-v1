@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import { CgSmileMouthOpen, CgToolbox, CgWebsite } from 'react-icons/cg';
+import { CgToolbox, CgWebsite } from 'react-icons/cg';
 import {
 	SiAdobeillustrator,
 	SiAdobephotoshop,
@@ -65,6 +65,7 @@ import QuoteSection from '../components/QuoteSection';
 import SkillSection from '../components/SkillSection';
 import CallToAction from '../components/CallToAction';
 import ContactForm from '../components/ContactForm';
+import { FaMap } from 'react-icons/fa';
 
 const HomePage: NextPage = () => {
 	return (
@@ -306,7 +307,7 @@ const HomePage: NextPage = () => {
 			</div>
 			<div id="roadmap">
 				<QuoteSection
-					icon={CgSmileMouthOpen}
+					icon={FaMap}
 					title="Roadmap"
 					description="The Best Skill I possess is 'Eagerness to Learn'"
 				/>
