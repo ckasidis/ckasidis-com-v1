@@ -1,18 +1,27 @@
 import { NextPage } from 'next';
-import { CgToolbox, CgWebsite } from 'react-icons/cg';
+import {
+	CgGames,
+	CgMusic,
+	CgPiano,
+	CgSmileMouthOpen,
+	CgToolbox,
+	CgWebsite,
+} from 'react-icons/cg';
+import { FaRunning, FaRegStar, FaBook } from 'react-icons/fa';
 import {
 	SiAdobeillustrator,
 	SiAdobephotoshop,
 	SiAdobepremierepro,
 	SiAmazonaws,
+	SiBlazor,
 	SiCloudflare,
-	SiContentful,
+	SiCsharp,
 	SiCss3,
 	SiD3Dotjs,
 	SiDart,
 	SiDocker,
 	SiDotnet,
-	SiExpress,
+	SiEthereum,
 	SiFacebook,
 	SiFigma,
 	SiFirebase,
@@ -20,39 +29,29 @@ import {
 	SiFramer,
 	SiGit,
 	SiGithub,
-	SiGithubactions,
 	SiGoogleanalytics,
 	SiGooglecloud,
 	SiGooglesearchconsole,
 	SiGoogletagmanager,
-	SiGraphql,
 	SiHtml5,
 	SiHubspot,
 	SiJava,
 	SiJavascript,
-	SiJest,
 	SiMariadb,
 	SiMessenger,
 	SiMicrosoftazure,
 	SiMicrosoftexcel,
 	SiMicrosoftteams,
-	SiMongodb,
 	SiNextdotjs,
 	SiNpm,
-	SiPandas,
 	SiPhp,
 	SiPlesk,
 	SiPython,
 	SiReact,
 	SiRust,
 	SiSass,
-	SiSocketdotio,
 	SiSolidity,
-	SiStripe,
-	SiSvelte,
 	SiTailwindcss,
-	SiTensorflow,
-	SiThreedotjs,
 	SiTypescript,
 	SiUnity,
 	SiVercel,
@@ -62,10 +61,9 @@ import {
 } from 'react-icons/si';
 import Banner from '../components/Banner';
 import QuoteSection from '../components/QuoteSection';
-import SkillSection from '../components/SkillSection';
+import IconsSection from '../components/IconsSection';
 import CallToAction from '../components/CallToAction';
 import ContactForm from '../components/ContactForm';
-import { FaMap } from 'react-icons/fa';
 
 const HomePage: NextPage = () => {
 	return (
@@ -73,17 +71,17 @@ const HomePage: NextPage = () => {
 			<div id="banner">
 				<Banner />
 			</div>
-			<div id="developer">
+			<div id="skills">
 				<QuoteSection
-					icon={CgWebsite}
-					title="Developer"
+					icon={FaRegStar}
+					title="My Skills"
 					description="Developer with Experience in React.js, Next.js, TypeScript, and Flutter"
 				/>
-				<SkillSection
-					skillColumns={[
+				<IconsSection
+					iconsColumns={[
 						{
 							title: 'Languages',
-							skills: [
+							iconGroups: [
 								{
 									name: 'JavaScript',
 									icon: SiJavascript,
@@ -120,7 +118,7 @@ const HomePage: NextPage = () => {
 						},
 						{
 							title: 'Tools and Libraries',
-							skills: [
+							iconGroups: [
 								{
 									name: 'React.js',
 									icon: SiReact,
@@ -132,6 +130,10 @@ const HomePage: NextPage = () => {
 								{
 									name: 'TailwindCSS',
 									icon: SiTailwindcss,
+								},
+								{
+									name: 'D3.js',
+									icon: SiD3Dotjs,
 								},
 								{
 									name: 'Framer Motion',
@@ -146,10 +148,6 @@ const HomePage: NextPage = () => {
 									icon: SiWordpress,
 								},
 								{
-									name: 'Contentful',
-									icon: SiContentful,
-								},
-								{
 									name: 'Flutter',
 									icon: SiFlutter,
 								},
@@ -157,7 +155,7 @@ const HomePage: NextPage = () => {
 						},
 						{
 							title: 'DevOps',
-							skills: [
+							iconGroups: [
 								{
 									name: 'AWS',
 									icon: SiAmazonaws,
@@ -196,22 +194,22 @@ const HomePage: NextPage = () => {
 				/>
 				<CallToAction
 					title="My Projects"
-					description="View source code of this Website and my other Projects on GitHub"
+					description="View source code of my Hackathon and other projects on GitHub"
 					button="My GitHub Profile"
 					url="https://github.com/ckasidis/"
 				/>
 			</div>
-			<div id="my-business">
+			<div id="business">
 				<QuoteSection
 					icon={CgToolbox}
 					title="My Business"
-					description="Founder/Developer/Marketer of an LMS Website Built with WordPress"
+					description="Founder/Developer/Marketer of an Online Course Website"
 				/>
-				<SkillSection
-					skillColumns={[
+				<IconsSection
+					iconsColumns={[
 						{
 							title: 'Development',
-							skills: [
+							iconGroups: [
 								{
 									name: 'WordPress',
 									icon: SiWordpress,
@@ -240,7 +238,7 @@ const HomePage: NextPage = () => {
 						},
 						{
 							title: 'Marketing Tools',
-							skills: [
+							iconGroups: [
 								{
 									name: 'Google Analytics',
 									icon: SiGoogleanalytics,
@@ -269,7 +267,7 @@ const HomePage: NextPage = () => {
 						},
 						{
 							title: 'Collaboration',
-							skills: [
+							iconGroups: [
 								{
 									name: 'Microsoft Teams',
 									icon: SiMicrosoftteams,
@@ -299,71 +297,63 @@ const HomePage: NextPage = () => {
 					]}
 				/>
 				<CallToAction
-					title="My LMS Website"
+					title="My Course Website"
 					description="idkclass.io is 1-year-old and has over 100 Monthly Active Users!"
 					button="Visit idkclass.io"
 					url="https://idkclass.io/"
 				/>
 			</div>
-			<div id="roadmap">
+			<div id="interests">
 				<QuoteSection
-					icon={FaMap}
-					title="Roadmap"
-					description="The best skill I possess is 'Eagerness to Learn'"
+					icon={CgSmileMouthOpen}
+					title="Other Interests"
+					description="A Developer / A Gamer / A Classical Musician"
 				/>
-				<SkillSection
-					skillColumns={[
+				<IconsSection
+					iconsColumns={[
 						{
-							title: 'Learning',
-							skills: [
+							title: 'Hobbies',
+							iconGroups: [
 								{
-									name: 'Svelte',
-									icon: SiSvelte,
+									name: 'Music',
+									icon: CgMusic,
 								},
 								{
-									name: 'MongoDB',
-									icon: SiMongodb,
+									name: 'Piano',
+									icon: CgPiano,
 								},
 								{
-									name: 'Express.js',
-									icon: SiExpress,
+									name: 'Gaming',
+									icon: CgGames,
 								},
 								{
-									name: 'GraphQL',
-									icon: SiGraphql,
+									name: 'Sports',
+									icon: FaRunning,
 								},
 								{
-									name: 'Testing',
-									icon: SiJest,
-								},
-								{
-									name: 'CI/CD',
-									icon: SiGithubactions,
+									name: 'Reading',
+									icon: FaBook,
 								},
 							],
 						},
 						{
-							title: 'Planning to Learn',
-							skills: [
+							title: '.NET and Game Dev',
+							iconGroups: [
 								{
-									name: 'Stripe.js',
-									icon: SiStripe,
-								},
-								{
-									name: 'D3.js',
-									icon: SiD3Dotjs,
-								},
-								{
-									name: 'socket.io',
-									icon: SiSocketdotio,
-								},
-								{
-									name: 'Three.js',
-									icon: SiThreedotjs,
+									name: 'C#',
+									icon: SiCsharp,
 								},
 								{
 									name: '.NET6',
 									icon: SiDotnet,
+								},
+								{
+									name: 'ASP.NET',
+									icon: CgWebsite,
+								},
+								{
+									name: 'Blazor',
+									icon: SiBlazor,
 								},
 								{
 									name: 'Unity',
@@ -372,14 +362,18 @@ const HomePage: NextPage = () => {
 							],
 						},
 						{
-							title: 'Other Interests',
-							skills: [
+							title: 'Crypto and WASM',
+							iconGroups: [
 								{
 									name: 'Web3',
 									icon: SiWeb3Dotjs,
 								},
 								{
-									name: 'Smart Contracts',
+									name: 'Blockchain',
+									icon: SiEthereum,
+								},
+								{
+									name: 'Solidity',
 									icon: SiSolidity,
 								},
 								{
@@ -389,14 +383,6 @@ const HomePage: NextPage = () => {
 								{
 									name: 'Rust',
 									icon: SiRust,
-								},
-								{
-									name: 'Data Science',
-									icon: SiPandas,
-								},
-								{
-									name: 'Machine Learning',
-									icon: SiTensorflow,
 								},
 							],
 						},
