@@ -1,6 +1,12 @@
 import { NextPage } from 'next';
 import { CgGames, CgMusic, CgPiano, CgSmileMouthOpen } from 'react-icons/cg';
-import { FaRunning, FaRegStar, FaBook, FaFootballBall } from 'react-icons/fa';
+import {
+	FaRunning,
+	FaRegStar,
+	FaBook,
+	FaFootballBall,
+	FaTv,
+} from 'react-icons/fa';
 import {
 	SiAdobepremierepro,
 	SiAmazonaws,
@@ -203,11 +209,11 @@ const HomePage: NextPage = () => {
 									icon: CgGames,
 								},
 								{
-									name: 'Football',
-									icon: FaFootballBall,
+									name: 'Movie',
+									icon: FaTv,
 								},
 								{
-									name: 'Exercise',
+									name: 'Sports',
 									icon: FaRunning,
 								},
 								{
