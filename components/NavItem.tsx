@@ -16,7 +16,7 @@ const NavItem: NextPage<Props> = ({ icon, text, path }) => {
 			whileHover={{ scale: 1.1 }}
 			className="flex items-center justify-center gap-2 hover:text-gray-400 md:text-xl"
 		>
-			<div className="hidden sm:block">{createElement(icon)}</div>
+			<div>{createElement(icon)}</div>
 			<Link href={path}>{text}</Link>
 		</motion.li>
 	);

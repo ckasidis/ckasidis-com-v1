@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import { motion } from 'framer-motion';
-import { CgMail, CgSmileMouthOpen, CgToolbox } from 'react-icons/cg';
+import { CgMail, CgSmileMouthOpen } from 'react-icons/cg';
 import { FaGithub, FaRegStar } from 'react-icons/fa';
 import NavItem from './NavItem';
 
@@ -20,7 +20,6 @@ const Navigation: NextPage = () => {
 				<nav className="flex items-center justify-evenly">
 					<ul className="flex-1 flex items-center justify-evenly font-bold lg:flex-col lg:gap-6">
 						<NavItem icon={FaRegStar} text="Skills" path="/#skills" />
-						<NavItem icon={CgToolbox} text="Business" path="/#business" />
 						<NavItem
 							icon={CgSmileMouthOpen}
 							text="Interests"

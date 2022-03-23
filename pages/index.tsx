@@ -1,60 +1,38 @@
 import { NextPage } from 'next';
-import {
-	CgGames,
-	CgMusic,
-	CgPiano,
-	CgSmileMouthOpen,
-	CgToolbox,
-	CgWebsite,
-} from 'react-icons/cg';
+import { CgGames, CgMusic, CgPiano, CgSmileMouthOpen } from 'react-icons/cg';
 import { FaRunning, FaRegStar, FaBook } from 'react-icons/fa';
 import {
-	SiAdobeillustrator,
-	SiAdobephotoshop,
-	SiAdobepremierepro,
 	SiAmazonaws,
-	SiBlazor,
 	SiCloudflare,
 	SiCsharp,
 	SiCss3,
-	SiD3Dotjs,
 	SiDart,
 	SiDocker,
 	SiDotnet,
-	SiEthereum,
-	SiFacebook,
+	SiExpress,
 	SiFigma,
 	SiFirebase,
 	SiFlutter,
-	SiFramer,
 	SiGit,
 	SiGithub,
 	SiGoogleanalytics,
 	SiGooglecloud,
 	SiGooglesearchconsole,
-	SiGoogletagmanager,
 	SiHtml5,
-	SiHubspot,
 	SiJava,
 	SiJavascript,
-	SiMariadb,
-	SiMessenger,
 	SiMicrosoftazure,
-	SiMicrosoftexcel,
-	SiMicrosoftteams,
+	SiMongodb,
 	SiNextdotjs,
-	SiNpm,
-	SiPhp,
-	SiPlesk,
+	SiNodedotjs,
+	SiPandas,
 	SiPython,
 	SiReact,
 	SiRust,
-	SiSass,
 	SiSolidity,
 	SiTailwindcss,
 	SiTypescript,
 	SiUnity,
-	SiVercel,
 	SiWeb3Dotjs,
 	SiWebassembly,
 	SiWordpress,
@@ -91,20 +69,20 @@ const HomePage: NextPage = () => {
 									icon: SiTypescript,
 								},
 								{
-									name: 'CSS3',
-									icon: SiCss3,
-								},
-								{
-									name: 'Sass',
-									icon: SiSass,
-								},
-								{
 									name: 'HTML5',
 									icon: SiHtml5,
 								},
 								{
+									name: 'CSS3',
+									icon: SiCss3,
+								},
+								{
 									name: 'Python',
 									icon: SiPython,
+								},
+								{
+									name: 'C#',
+									icon: SiCsharp,
 								},
 								{
 									name: 'Java',
@@ -132,20 +110,20 @@ const HomePage: NextPage = () => {
 									icon: SiTailwindcss,
 								},
 								{
-									name: 'D3.js',
-									icon: SiD3Dotjs,
+									name: 'node.js',
+									icon: SiNodedotjs,
 								},
 								{
-									name: 'Framer Motion',
-									icon: SiFramer,
+									name: 'express.js',
+									icon: SiExpress,
 								},
 								{
-									name: 'NPM',
-									icon: SiNpm,
+									name: 'MongoDB',
+									icon: SiMongodb,
 								},
 								{
-									name: 'WordPress',
-									icon: SiWordpress,
+									name: '.NET6',
+									icon: SiDotnet,
 								},
 								{
 									name: 'Flutter',
@@ -156,18 +134,6 @@ const HomePage: NextPage = () => {
 						{
 							title: 'DevOps',
 							iconGroups: [
-								{
-									name: 'AWS',
-									icon: SiAmazonaws,
-								},
-								{
-									name: 'Azure',
-									icon: SiMicrosoftazure,
-								},
-								{
-									name: 'GCP',
-									icon: SiGooglecloud,
-								},
 								{
 									name: 'Docker',
 									icon: SiDocker,
@@ -181,12 +147,24 @@ const HomePage: NextPage = () => {
 									icon: SiGithub,
 								},
 								{
-									name: 'Vercel',
-									icon: SiVercel,
+									name: 'AWS',
+									icon: SiAmazonaws,
+								},
+								{
+									name: 'Azure',
+									icon: SiMicrosoftazure,
+								},
+								{
+									name: 'GCP',
+									icon: SiGooglecloud,
 								},
 								{
 									name: 'Firebase',
 									icon: SiFirebase,
+								},
+								{
+									name: 'Cloudflare',
+									icon: SiCloudflare,
 								},
 							],
 						},
@@ -199,115 +177,11 @@ const HomePage: NextPage = () => {
 					url="https://github.com/ckasidis/"
 				/>
 			</div>
-			<div id="business">
-				<QuoteSection
-					icon={CgToolbox}
-					title="My Business"
-					description="Founder/Developer/Marketer of an Online Course Website"
-				/>
-				<IconsSection
-					iconsColumns={[
-						{
-							title: 'Development',
-							iconGroups: [
-								{
-									name: 'WordPress',
-									icon: SiWordpress,
-								},
-								{
-									name: 'MariaDB',
-									icon: SiMariadb,
-								},
-								{
-									name: 'PHP',
-									icon: SiPhp,
-								},
-								{
-									name: 'Plesk',
-									icon: SiPlesk,
-								},
-								{
-									name: 'Azure',
-									icon: SiMicrosoftazure,
-								},
-								{
-									name: 'Cloudflare',
-									icon: SiCloudflare,
-								},
-							],
-						},
-						{
-							title: 'Marketing Tools',
-							iconGroups: [
-								{
-									name: 'Google Analytics',
-									icon: SiGoogleanalytics,
-								},
-								{
-									name: 'Tag Manager',
-									icon: SiGoogletagmanager,
-								},
-								{
-									name: 'Search Console',
-									icon: SiGooglesearchconsole,
-								},
-								{
-									name: 'Hubspot',
-									icon: SiHubspot,
-								},
-								{
-									name: 'Messenger Plugin',
-									icon: SiMessenger,
-								},
-								{
-									name: 'Business Manager',
-									icon: SiFacebook,
-								},
-							],
-						},
-						{
-							title: 'Collaboration',
-							iconGroups: [
-								{
-									name: 'Microsoft Teams',
-									icon: SiMicrosoftteams,
-								},
-								{
-									name: 'Microsoft Excel',
-									icon: SiMicrosoftexcel,
-								},
-								{
-									name: 'Figma',
-									icon: SiFigma,
-								},
-								{
-									name: 'Photoshop',
-									icon: SiAdobephotoshop,
-								},
-								{
-									name: 'Illustrator',
-									icon: SiAdobeillustrator,
-								},
-								{
-									name: 'Premiere Pro',
-									icon: SiAdobepremierepro,
-								},
-							],
-						},
-					]}
-				/>
-				<CallToAction
-					title="My Course Website"
-					description="idkclass.io is 1-year-old and has over 100 Monthly Active Users!"
-					button="Visit idkclass.io"
-					url="https://idkclass.io/"
-				/>
-			</div>
 			<div id="interests">
 				<QuoteSection
 					icon={CgSmileMouthOpen}
-					title="Other Interests"
-					description="A Developer / A Gamer / A Classical Musician"
+					title="Hobbies and Interests"
+					description="Know more about me!"
 				/>
 				<IconsSection
 					iconsColumns={[
@@ -337,52 +211,52 @@ const HomePage: NextPage = () => {
 							],
 						},
 						{
-							title: '.NET and Game Dev',
+							title: 'Other Skills',
 							iconGroups: [
 								{
-									name: 'C#',
-									icon: SiCsharp,
+									name: 'WordPress',
+									icon: SiWordpress,
 								},
 								{
-									name: '.NET6',
-									icon: SiDotnet,
+									name: 'Data Science',
+									icon: SiPandas,
 								},
 								{
-									name: 'ASP.NET',
-									icon: CgWebsite,
+									name: 'UX/UI Design',
+									icon: SiFigma,
 								},
 								{
-									name: 'Blazor',
-									icon: SiBlazor,
+									name: 'Analytics',
+									icon: SiGoogleanalytics,
 								},
 								{
-									name: 'Unity',
-									icon: SiUnity,
+									name: 'SEO',
+									icon: SiGooglesearchconsole,
 								},
 							],
 						},
 						{
-							title: 'Crypto and WASM',
+							title: 'Interests',
 							iconGroups: [
+								{
+									name: 'Web Assembly',
+									icon: SiWebassembly,
+								},
+								{
+									name: 'Rust',
+									icon: SiRust,
+								},
 								{
 									name: 'Web3',
 									icon: SiWeb3Dotjs,
-								},
-								{
-									name: 'Blockchain',
-									icon: SiEthereum,
 								},
 								{
 									name: 'Solidity',
 									icon: SiSolidity,
 								},
 								{
-									name: 'WASM',
-									icon: SiWebassembly,
-								},
-								{
-									name: 'Rust',
-									icon: SiRust,
+									name: 'Unity',
+									icon: SiUnity,
 								},
 							],
 						},
