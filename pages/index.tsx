@@ -1,8 +1,10 @@
 import { NextPage } from 'next';
 import { CgGames, CgMusic, CgPiano, CgSmileMouthOpen } from 'react-icons/cg';
-import { FaRunning, FaRegStar, FaBook } from 'react-icons/fa';
+import { FaRunning, FaRegStar, FaBook, FaFootballBall } from 'react-icons/fa';
 import {
+	SiAdobepremierepro,
 	SiAmazonaws,
+	SiBlazor,
 	SiCloudflare,
 	SiCsharp,
 	SiCss3,
@@ -201,7 +203,11 @@ const HomePage: NextPage = () => {
 									icon: CgGames,
 								},
 								{
-									name: 'Sports',
+									name: 'Football',
+									icon: FaFootballBall,
+								},
+								{
+									name: 'Exercise',
 									icon: FaRunning,
 								},
 								{
@@ -233,6 +239,10 @@ const HomePage: NextPage = () => {
 									name: 'SEO',
 									icon: SiGooglesearchconsole,
 								},
+								{
+									name: 'Video Editing',
+									icon: SiAdobepremierepro,
+								},
 							],
 						},
 						{
@@ -257,6 +267,10 @@ const HomePage: NextPage = () => {
 								{
 									name: 'Unity',
 									icon: SiUnity,
+								},
+								{
+									name: 'Blazor',
+									icon: SiBlazor,
 								},
 							],
 						},
