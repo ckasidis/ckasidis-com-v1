@@ -54,7 +54,7 @@ const Banner: NextPage = () => {
 					I&apos;m Kasidis
 				</h1>
 				<h3 className="text-gray-50 text-xl font-bold sm:text-3xl">
-					A Frontend Developer
+					A Full Stack Developer
 				</h3>
 			</div>
 		</section>
