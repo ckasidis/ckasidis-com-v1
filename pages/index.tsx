@@ -1,49 +1,40 @@
 import { NextPage } from 'next';
-import { CgGames, CgMusic, CgPiano, CgSmileMouthOpen } from 'react-icons/cg';
+import { CgServer, CgWebsite } from 'react-icons/cg';
 import {
-	FaRunning,
-	FaRegStar,
-	FaBook,
-	FaFootballBall,
-	FaTv,
-} from 'react-icons/fa';
-import {
-	SiAdobepremierepro,
 	SiAmazonaws,
-	SiBlazor,
-	SiCloudflare,
+	SiChakraui,
 	SiCsharp,
 	SiCss3,
-	SiDart,
+	SiCypress,
 	SiDocker,
-	SiDotnet,
-	SiExpress,
-	SiFigma,
 	SiFirebase,
 	SiFlutter,
+	SiFramer,
 	SiGit,
 	SiGithub,
-	SiGoogleanalytics,
+	SiGo,
 	SiGooglecloud,
-	SiGooglesearchconsole,
-	SiHtml5,
+	SiGraphql,
 	SiJava,
-	SiJavascript,
+	SiMaterialui,
 	SiMicrosoftazure,
 	SiMongodb,
+	SiMysql,
 	SiNextdotjs,
-	SiNodedotjs,
-	SiPandas,
+	SiPostgresql,
+	SiPrisma,
 	SiPython,
 	SiReact,
 	SiRust,
-	SiSolidity,
+	SiSass,
+	SiSqlite,
+	SiStorybook,
+	SiSvelte,
 	SiTailwindcss,
+	SiThreedotjs,
 	SiTypescript,
-	SiUnity,
-	SiWeb3Dotjs,
-	SiWebassembly,
-	SiWordpress,
+	SiVite,
+	SiWebpack,
 } from 'react-icons/si';
 import Banner from '../components/Banner';
 import QuoteSection from '../components/QuoteSection';
@@ -57,11 +48,117 @@ const HomePage: NextPage = () => {
 			<div id="banner">
 				<Banner />
 			</div>
-			<div id="skills">
+			<div id="frontend">
 				<QuoteSection
-					icon={FaRegStar}
-					title="My Skills"
-					description="Developer with Experience in React.js, Next.js, TypeScript, and Flutter"
+					icon={CgWebsite}
+					title="Frontend Skills"
+					description="A TypeScript Developer experienced in React.js, Next.js, and React Native"
+				/>
+				<IconsSection
+					iconsColumns={[
+						{
+							title: 'Frameworks',
+							iconGroups: [
+								{
+									name: 'React.js',
+									icon: SiReact,
+								},
+								{
+									name: 'Svelte',
+									icon: SiSvelte,
+								},
+								{
+									name: 'Next.js',
+									icon: SiNextdotjs,
+								},
+								{
+									name: 'SvelteKit',
+									icon: SiSvelte,
+								},
+								{
+									name: 'React Native',
+									icon: SiReact,
+								},
+								{
+									name: 'Flutter',
+									icon: SiFlutter,
+								},
+							],
+						},
+						{
+							title: 'Design',
+							iconGroups: [
+								{
+									name: 'CSS',
+									icon: SiCss3,
+								},
+								{
+									name: 'Sass',
+									icon: SiSass,
+								},
+								{
+									name: 'Tailwind',
+									icon: SiTailwindcss,
+								},
+								{
+									name: 'Chakra UI',
+									icon: SiChakraui,
+								},
+								{
+									name: 'Material UI',
+									icon: SiMaterialui,
+								},
+								{
+									name: 'Framer Motion',
+									icon: SiFramer,
+								},
+							],
+						},
+						{
+							title: 'Other Tools',
+							iconGroups: [
+								{
+									name: 'GraphQL',
+									icon: SiGraphql,
+								},
+								{
+									name: 'Storybook',
+									icon: SiStorybook,
+								},
+								{
+									name: 'Cypress',
+									icon: SiCypress,
+								},
+								{
+									name: 'Vite',
+									icon: SiVite,
+								},
+								{
+									name: 'Webpack',
+									icon: SiWebpack,
+								},
+								{
+									name: 'Three.js',
+									icon: SiThreedotjs,
+								},
+							],
+						},
+					]}
+				/>
+			</div>
+			<div id="projects">
+				<CallToAction
+					title="My Projects"
+					description="View source code of my Hackathon and other Side Projects on GitHub"
+					button="My GitHub Profile"
+					url="https://github.com/ckasidis/"
+				/>
+			</div>
+			<div id="backend">
+				<QuoteSection
+					icon={CgServer}
+					title="Backend Skills"
+					description="A Backend Developer experienced in Node.js (TypeScript) and Go"
 				/>
 				<IconsSection
 					iconsColumns={[
@@ -69,24 +166,20 @@ const HomePage: NextPage = () => {
 							title: 'Languages',
 							iconGroups: [
 								{
-									name: 'JavaScript',
-									icon: SiJavascript,
-								},
-								{
-									name: 'TypeScript',
+									name: 'TS/JS',
 									icon: SiTypescript,
 								},
 								{
-									name: 'HTML5',
-									icon: SiHtml5,
-								},
-								{
-									name: 'CSS3',
-									icon: SiCss3,
+									name: 'Go',
+									icon: SiGo,
 								},
 								{
 									name: 'Python',
 									icon: SiPython,
+								},
+								{
+									name: 'Rust',
+									icon: SiRust,
 								},
 								{
 									name: 'C#',
@@ -96,46 +189,34 @@ const HomePage: NextPage = () => {
 									name: 'Java',
 									icon: SiJava,
 								},
-								{
-									name: 'Dart',
-									icon: SiDart,
-								},
 							],
 						},
 						{
-							title: 'Tools and Libraries',
+							title: 'Database',
 							iconGroups: [
 								{
-									name: 'React.js',
-									icon: SiReact,
+									name: 'PostgreSQL',
+									icon: SiPostgresql,
 								},
 								{
-									name: 'Next.js',
-									icon: SiNextdotjs,
-								},
-								{
-									name: 'TailwindCSS',
-									icon: SiTailwindcss,
-								},
-								{
-									name: 'node.js',
-									icon: SiNodedotjs,
-								},
-								{
-									name: 'express.js',
-									icon: SiExpress,
+									name: 'MySQL',
+									icon: SiMysql,
 								},
 								{
 									name: 'MongoDB',
 									icon: SiMongodb,
 								},
 								{
-									name: '.NET6',
-									icon: SiDotnet,
+									name: 'Firebase',
+									icon: SiFirebase,
 								},
 								{
-									name: 'Flutter',
-									icon: SiFlutter,
+									name: 'sqlite',
+									icon: SiSqlite,
+								},
+								{
+									name: 'Prisma',
+									icon: SiPrisma,
 								},
 							],
 						},
@@ -159,124 +240,12 @@ const HomePage: NextPage = () => {
 									icon: SiAmazonaws,
 								},
 								{
-									name: 'Azure',
-									icon: SiMicrosoftazure,
-								},
-								{
 									name: 'GCP',
 									icon: SiGooglecloud,
 								},
 								{
-									name: 'Firebase',
-									icon: SiFirebase,
-								},
-								{
-									name: 'Cloudflare',
-									icon: SiCloudflare,
-								},
-							],
-						},
-					]}
-				/>
-				<CallToAction
-					title="My Projects"
-					description="View source code of my Hackathon and other projects on GitHub"
-					button="My GitHub Profile"
-					url="https://github.com/ckasidis/"
-				/>
-			</div>
-			<div id="interests">
-				<QuoteSection
-					icon={CgSmileMouthOpen}
-					title="Hobbies and Interests"
-					description="Know more about me!"
-				/>
-				<IconsSection
-					iconsColumns={[
-						{
-							title: 'Hobbies',
-							iconGroups: [
-								{
-									name: 'Music',
-									icon: CgMusic,
-								},
-								{
-									name: 'Piano',
-									icon: CgPiano,
-								},
-								{
-									name: 'Gaming',
-									icon: CgGames,
-								},
-								{
-									name: 'Movie',
-									icon: FaTv,
-								},
-								{
-									name: 'Sports',
-									icon: FaRunning,
-								},
-								{
-									name: 'Reading',
-									icon: FaBook,
-								},
-							],
-						},
-						{
-							title: 'Other Skills',
-							iconGroups: [
-								{
-									name: 'WordPress',
-									icon: SiWordpress,
-								},
-								{
-									name: 'Data Science',
-									icon: SiPandas,
-								},
-								{
-									name: 'UX/UI Design',
-									icon: SiFigma,
-								},
-								{
-									name: 'Analytics',
-									icon: SiGoogleanalytics,
-								},
-								{
-									name: 'SEO',
-									icon: SiGooglesearchconsole,
-								},
-								{
-									name: 'Video Editing',
-									icon: SiAdobepremierepro,
-								},
-							],
-						},
-						{
-							title: 'Interests',
-							iconGroups: [
-								{
-									name: 'Web Assembly',
-									icon: SiWebassembly,
-								},
-								{
-									name: 'Rust',
-									icon: SiRust,
-								},
-								{
-									name: 'Web3',
-									icon: SiWeb3Dotjs,
-								},
-								{
-									name: 'Solidity',
-									icon: SiSolidity,
-								},
-								{
-									name: 'Unity',
-									icon: SiUnity,
-								},
-								{
-									name: 'Blazor',
-									icon: SiBlazor,
+									name: 'Azure',
+									icon: SiMicrosoftazure,
 								},
 							],
 						},
