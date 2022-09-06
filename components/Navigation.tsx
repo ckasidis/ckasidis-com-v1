@@ -17,7 +17,7 @@ const socialLinks = [
 	{ icon: FaGithub, href: 'https://github.com/ckasidis/' },
 	{
 		icon: FaLinkedin,
-		href: 'https://www.linkedin.com/in/kasidis-chantharojwong-418580205/',
+		href: 'https://www.linkedin.com/in/ckasidis/',
 	},
 ];
 
